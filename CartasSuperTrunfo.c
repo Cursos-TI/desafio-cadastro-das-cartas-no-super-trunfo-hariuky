@@ -139,7 +139,7 @@ int main(int argc, char *argv[]) {
 	}
 	
 	printf("\nDensidade populacional: ");
-	escolha = densi_Pop1 > densi_Pop2 ? 1 : 0;
+	escolha = densi_Pop1 < densi_Pop2 ? 1 : 0;
 	if(escolha == 1){
     	printf("Carta 1 venceu (%d)",escolha);
 	}else{
