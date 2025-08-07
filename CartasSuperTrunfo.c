@@ -11,6 +11,8 @@ int main(int argc, char *argv[]) {
     float area_km_1, area_km_2;
     float PIB_1, PIB_2;
     int pontos_turisticos_1, pontos_turisticos_2;
+    float Densi_Pop1, Densi_Pop2;
+    float PIB_perCap1, PIB_perCap2;
     
     printf("Jogo super trunfo! \n");
 
@@ -36,6 +38,10 @@ int main(int argc, char *argv[]) {
 
     printf("Digite o numero de pontos turisticos da cidade: \n");
     scanf("%d", &pontos_turisticos_1);
+    
+    Densi_Pop1 = populacao_1 / area_km_1;
+    PIB_perCap1 = PIB_1 / populacao_1;
+    
 
     printf("\n ____________________________________________________ \n");
 
@@ -62,6 +68,9 @@ int main(int argc, char *argv[]) {
     printf("Digite o numero de pontos turisticos da cidade: \n");
     scanf("%d", &pontos_turisticos_2);
     
+    Densi_Pop2 = populacao_2 / area_km_2;
+    PIB_perCap2 = PIB_2 / populacao_2;
+    
      // EXIBIÇÃO DAS CARTAS
     printf(" \n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ \n");
     printf("Carta 1 \n");
@@ -72,6 +81,8 @@ int main(int argc, char *argv[]) {
     printf("Area em km quadrado da cidade: %.3f \n", area_km_1);
     printf("PIB da cidade: %.4f \n", PIB_1);
     printf("Pontos turisticos da cidade: %d \n", pontos_turisticos_1);
+    printf("Densidade Populacional da cidade: %.2f hab/km quadrados \n", Densi_Pop1);
+    printf("PIB per Capita da cidade: %.2f reais \n", PIB_perCap1);
   
     printf(" \n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ \n");
     printf("Carta 2 \n");
@@ -82,6 +93,8 @@ int main(int argc, char *argv[]) {
     printf("Area em km quadrado da cidade: %.3f \n", area_km_2);
     printf("PIB da cidade: %.4f \n", PIB_2);
     printf("Pontos turisticos da cidade: %d \n", pontos_turisticos_2);
+    printf("Densidade Populacional da cidade: %.2f hab/km quadrados \n", Densi_Pop2);
+    printf("PIB per Capita da cidade: %.2f reais \n", PIB_perCap2);
    
 	return 0;
 	
